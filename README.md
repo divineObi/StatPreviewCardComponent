@@ -1,0 +1,2 @@
+# StatPreviewCardComponent
+A frontendmentor task
