@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 376px;
+    background-color: hsl(233, 47%, 7%);
+}
+.container {
+    width: 90%;
+    border-radius: 12px;
+    margin: 20px;
+    background-color:  hsl(244, 38%, 16%)  ;
+}
+.img-box {
+    background-image: url(../images/image-header-mobile.jpg);
+    height: 50vh ;
+    background-size: cover;
+    background-color: rgba(200, 152, 230, 0.3) ;
+    background-blend-mode: overlay;
+    overflow: hidden;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+#title h2 {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-family: Inter;
+    margin: 20px;
+    padding-top: 20px;
+}
+#title h2 .insight {
+    color: hsl(277, 64%, 61%);
+}
+.container .flexbox{
+    display: flex;
+    flex-direction: column;
+}
+#statistics .flexbox-2  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#title-desc {
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    text-align: center;
+    font-family:Lexend Deca;
+    margin: 20px;
+}
+.stat {
+    font-size: 24px;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: Lexend Deca;
+    margin: 30px;
+    padding-left: 120px;
+}
+.stat-desc {
+    font-size: 10px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family:Inter;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 5px;
+}
+
+@media screen and (min-width:1024px) {
+    body {
+        width: 1024px;
+    }
+    .container {
+        margin: 200px;
+    }
+    .container .flexbox{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .img-box{
+        width: 100%;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border-top-left-radius: 0;
+    }
+    #statistics .flexbox-2  {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+    #statistics{
+        padding-top: 20px;
+    }
+    .stat{
+        padding-left: 0;
+    }
+    #title h2{
+        text-align: left;
+    }
+    #title-desc {
+        text-align: left;
+    }
+    .text-box{
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+}
