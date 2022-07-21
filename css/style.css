@@ -16,11 +16,11 @@ body {
 }
 .img-box {
     background-image: url(../images/image-header-mobile.jpg);
-    height: 50vh ;
+    height: 40vh ;
     background-size: cover;
     background-color: rgba(200, 152, 230, 0.3) ;
     background-blend-mode: overlay;
-    overflow: hidden;
+    background-position: center;
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
 }
@@ -71,7 +71,8 @@ body {
         width: 1024px;
     }
     .container {
-        margin: 200px;
+        margin: auto;
+        margin-top: 200px;
     }
     .container .flexbox{
         display: flex;
@@ -82,7 +83,9 @@ body {
         border-top-right-radius: 12px;
         border-bottom-right-radius: 12px;
         border-top-left-radius: 0;
+        height: 42.3vh;
     }
+    
     #statistics .flexbox-2  {
         display: flex;
         flex-direction: row;
